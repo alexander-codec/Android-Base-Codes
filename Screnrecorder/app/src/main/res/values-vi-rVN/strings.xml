@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPcapture</string>
+    <string name="device_not_supported_message">Xin lỗi, Máy bạn không được hỗ trợ</string>
+    <string name="device_not_supported">Máy bạn không được hỗ trợ</string>
+    <string name="notification">Bắt đầu quay màn hình</string>
+    <string name="action_settings">Cài đặt</string>
+
+    <string name="countdown_one">1…</string>
+    <string name="countdown_two">2…</string>
+    <string name="countdown_three">3…</string>
+
+    <string name="trim">Cắt </string>
+    <string name="delete">Xóa</string>
+    <string name="share">Chia sẻ</string>
+
+    <string name="record">quay màn hình</string>
+    <string name="capture">chụp màn hình</string>
+    <string name="review">xem lại</string>
+    <string name="setting">cài đặt</string>
+
+    <string name="preference">Cài Đặt</string>
+    <string name="video_resolution">Độ phân giải</string>
+    <string name="video_orientation">Chiều màn hình</string>
+    <string name="portrait">Dọc</string>
+    <string name="lanscape">Ngang</string>
+    <string name="setting_bitrate">Chất lượng:</string>
+    <string name="setting_Mbps">Mbps</string>
+    <string name="setting_audio">Ghi âm</string>
+    <string name="setting_touch">Hiển thị chạm:</string>
+    <string name="gpaddy_app">Ứng dụng GPaddy</string>
+
+    <string name="play">Play</string>
+
+    <string name="start_record">GPcapture bắt đầu quay</string>
+    <string name="stop_record">Chạm vào đây để dừng quay</string>
+    <string name="record_stop">Ghi hình xong</string>
+    <string name="gp_stopped">GPcapture quay xong</string>
+
+    <string name="video">Phim</string>
+    <string name="image">Ảnh</string>
+    <string name="gallery">Thư Viện</string>
+
+    <string name="screenshot_saved">Chụp thành công</string>
+
+    <string name="sharevideo">Chia sẻ Video qua:</string>
+
+    <string name="audioset">Ghi Âm</string>
+    <string name="audiounset">Không Ghi Âm</string>
+
+    <string name="touchset">Hiển thị chạm</string>
+    <string name="touchunset">Không hiển thị chạm</string>
+</resources>

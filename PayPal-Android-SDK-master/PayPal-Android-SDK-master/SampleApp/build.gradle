@@ -1,0 +1,107 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+    }
+}
+
+repositories {
+    maven {
+        // Used for downloading dependency com.github.lkorth:device-automator
+        url "https://jitpack.io"
+    }
+    jcenter()
+    mavenCentral()
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '24.0.1'
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 24
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+        release {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+
+    // Only for SampleApp.
+    // It is failing because the okio version and okhttp is not found, which is expected.
+    lintOptions {
+        abortOnError false
+    }
+
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            signingConfig signingConfigs.debug
+        }
+
+        release{
+            minifyEnabled true
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            signingConfig signingConfigs.release
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                output.outputFile = new File(outputFile.parent, "paypal-sample-app-${variant.name}.apk")
+            }
+        }
+    }
+
+    productFlavors {
+        general
+        partner
+    }
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:24.0.0'
+}
+
+
+dependencies {
+    if (parent != null) {
+        generalCompile project(path: ':androidSDK', configuration: 'generalDebug')
+        partnerCompile project(path: ':androidSDK', configuration: 'partnerDebug')
+    } else {
+        compile('com.paypal.sdk:paypal-android-sdk:2.15.2')
+    }
+    compile 'com.google.android.gms:play-services-wallet:8.4.0'
+
+    testCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
+    androidTestCompile 'com.github.lkorth:device-automator:30238040d8'
+    testCompile 'com.google.dexmaker:dexmaker-mockito:1.1'
+    testCompile 'com.android.support.test.espresso:espresso-intents:2.2.1'
+    testCompile 'com.android.support.test.espresso:espresso-web:2.2.1'
+    testCompile 'com.android.support.test:runner:0.4.1'
+    testCompile 'com.android.support.test:rules:0.4.1'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.14.1'
+}

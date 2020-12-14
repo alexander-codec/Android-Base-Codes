@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SongsCloud MP3 Music Download</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Disclaimer</string>
+    <string name="disclaimer">This App based on Soundcloud Api, all Online Public Data Fetching from Soundcloud, Hence We Are Not Violating Any Terms</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Please enter keyword to search song</string>
+    <string name="download_empety">Nothing in Songs</string>
+    <string name="no_more">No more songs!</string>
+    <string name="no_result">No result for </string>
+    <string name="title_activity_download">Downloads</string>
+    <string name="banner_ad_unit_id">ca-app-pub-xxxxxxxxxxxxxxxxxxx</string>
+    <string name="inter_ad_unit_id">ca-app-pub-xxxxxxxxxxxxxxxxxxx</string>
+    <string name="player_banner_ad_unit_id">ca-app-pub-xxxxxxxxxxxxxxxxxxx</string>
+    <string name="share">Share our app with your friends!</string>
+    <string name="rating">If you find our app useful, please rate it 5 stars. Your support helps us improve the app.</string>
+    <string name="WelcomeMsg">Welcome</string>
+    <string name="ShareMsg">Hey check out Music download Player at: https://play.google.com/store/apps/details?id=</string>
+</resources>

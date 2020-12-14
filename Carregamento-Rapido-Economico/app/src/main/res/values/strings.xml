@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Carregamento Rapido e Economico</string>
+
+
+    <!-- Menu items -->
+    <string name="action_clean">Limpar</string>
+    <string name="action_rescan">Re-scannear</string>
+    <string name="action_search">Procurar</string>
+    <string name="action_sort_by_name">Filtrar por name</string>
+    <string name="action_sort_by_size">Filtrar por size</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="Ad_About_Activity_banner">PUT_AD_ID_HERE</string>
+    <string name="Ad_Battery_Detail_Activity_banner">PUT_AD_ID_HERE</string>
+    <string name="Ad_Close_All_Tools_banner">PUT_AD_ID_HERE</string>
+    <string name="Ad_FastCharger_banner">PUT_AD_ID_HERE</string>
+    <string name="Ad_Licence_banner">PUT_AD_ID_HERE</string>
+    <string name="Ad_Setting_banner">PUT_AD_ID_HERE</string>
+    <string name="Ad_About_Activity_native">PUT_AD_ID_HERE</string>
+    <string name="Ad_Close_All_Tools_native">PUT_AD_ID_HERE</string>
+    <string name="Ad_Fast_Charger_native">PUT_AD_ID_HERE</string>
+    <string name="Ad_Main_Activity_native">PUT_AD_ID_HERE</string>
+    <string name="Ad_Main_Activity_Int">PUT_AD_ID_HERE</string>
+
+
+</resources>

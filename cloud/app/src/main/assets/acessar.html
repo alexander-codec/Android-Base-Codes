@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/framework.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAjKfZn4ddFPk4bctF1lFQNPsuXPcNUv-8",
+    authDomain: "assistente-pessoal.firebaseapp.com",
+    databaseURL: "https://assistente-pessoal.firebaseio.com",
+    storageBucket: "assistente-pessoal.appspot.com",
+    messagingSenderId: "510696945104"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/acessar.js"></script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <section class="mobile-wrapper w-section">
+    <div class="bg-gradient page-content" data-scroll="0" id="main-stack">
+      <div class="body padding">
+        <div class="logo-login"></div>
+        <div class="bottom-section padding">
+          <div class="w-form">
+            <form action="index.html" method="get">
+              <div>
+                <input class="input-form light w-input" id="email" placeholder="Meu Email" type="email" required>
+                <div class="separator-fields"></div>
+              </div>
+              <div>
+                <div class="block-input-combined">
+                  <input class="input-form left light w-input" id="password" minlength="24" placeholder="Minha Senha" type="password" required><a class="right-input-link" data-load="1" href="novasenha.html">Nova senha?</a>
+                </div>
+                <div class="separator-button-input"></div>
+              </div>
+              <input class="action-button w-button" data-wait="Conectando..." type="submit" id="acessar" value="Conectar ao Cloud">
+              <div class="separator-button"></div><a class="link-upper" data-load="1" href="cadastrar.html">Não tem uma conta? <strong class="b-link">Criar nova conta</strong></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loading-mask page-content stop-loading" id="new-stack">
+      <div class="loading-icon">
+        <div class="icon ion-load-d navbar-button-icon"></div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/framework.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

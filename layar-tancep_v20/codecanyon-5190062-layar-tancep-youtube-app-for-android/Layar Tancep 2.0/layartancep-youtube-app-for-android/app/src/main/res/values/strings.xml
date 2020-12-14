@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">Layar Tancep</string>
+    <!-- Youtube developer key. Insert your own developer key. -->
+    <string name="youtube_apikey">DEVELOPER_KEY</string>
+    <!-- Google Play url. Change your.package.name with your own package name. -->
+    <string name="google_play_url">https://play.google.com/store/apps/details?id=com.your.package</string>
+    <!-- Banner ad id. Insert your own banner id, you can get banner id via admob. -->
+    <string name="banner_ad_unit_id">BANNER_AD_UNIT_ID</string>
+    <!-- Interstitial ad id. Insert your own interstitial id, you can get interstitial id via admob. -->
+    <string name="interstitial_ad_unit_id">INTERSTITIAL_AD_UNIT_ID</string>
+
+    <!-- Channel and playlist names, you can change the text but do NOT remove New Videos field. -->
+    <string-array name="channel_names">
+        <item>New Videos</item>
+        <item>Boyce Avenue</item>
+        <item>Madilyn Bailey</item>
+        <item>Kurt Hugo Schneider</item>
+        <item>Mike Tompkins</item>
+        <item>Walk of the Earth</item>
+        <item>ThePianoGuys</item>
+        <item>Acoustic Covers</item>
+    </string-array>
+
+    <!-- If it is channel than set it with 1, if it is playlist set it with 2. -->
+    <string-array name="video_types">
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Channel and playlist ids -->
+    <string-array name="channel_ids">
+        <item>0</item>
+        <item>UCgc00bfF_PvO_2AvqJZHXFg</item>
+        <item>UCZH4EVUqljV-zkZEd0Ot7EQ</item>
+        <item>UCplkk3J5wrEl0TNrthHjq4Q</item>
+        <item>UCYEnCCeFBCbrlmuNVzs21LQ</item>
+        <item>UCK7tptUDHh-RYDsdxO1-5QQ</item>
+        <item>UCmKurapML4BF9Bjtj4RbvXw</item>
+        <item>PL0BD69368AB943C89</item>
+    </string-array>
+
+    <!-- Page titles -->
+    <string name="about">About</string>
+
+    <!-- Error messages -->
+    <string name="no_result">No video result.</string>
+    <string name="no_internet_connection">Check your connection and try again.</string>
+    <string name="response_error">Connection Time Out or Server Under Maintenance</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <!-- Button text -->
+    <string name="retry">Retry</string>
+
+    <!-- Date Util -->
+    <string name="date_util_term_less">less than</string>
+    <string name="date_util_term_a">a</string>
+    <string name="date_util_term_an">an</string>
+
+    <string name="date_util_unit_second">second</string>
+    <string name="date_util_unit_seconds">seconds</string>
+    <string name="date_util_unit_minute">minute</string>
+    <string name="date_util_unit_minutes">minutes</string>
+    <string name="date_util_unit_hour">hour</string>
+    <string name="date_util_unit_hours">hours</string>
+    <string name="date_util_unit_day">day</string>
+    <string name="date_util_unit_days">days</string>
+    <string name="date_util_unit_month">month</string>
+    <string name="date_util_unit_months">months</string>
+    <string name="date_util_unit_year">year</string>
+    <string name="date_util_unit_years">years</string>
+
+    <string name="date_util_prefix_lt">less than a</string>
+    <string name="date_util_prefix_about">about</string>
+    <string name="date_util_prefix_over">over</string>
+    <string name="date_util_prefix_almost">almost</string>
+
+    <string name="date_util_suffix">ago</string>
+
+    <!-- About preferences keys, DO NOT change preferences keys below -->
+    <string name="pref_share_key">prefShareKey</string>
+    <string name="pref_rate_review_key">prefRateReviewKey</string>
+
+    <!-- About preferences values -->
+    <string name="pref_app_title">Application Name</string>
+    <string name="pref_app_summary">Layar Tancep</string>
+    <string name="pref_version_title">Build Version</string>
+    <string name="pref_version_summary">Version 2.0</string>
+    <string name="pref_developer_title">Developer</string>
+    <string name="pref_developer_summary">pongodev</string>
+    <string name="pref_copyright_title">Copyright</string>
+    <string name="pref_copyright_summary">Copyright 2014 pongodev. All rights reserved</string>
+    <string name="pref_share_title">Tell a Friend</string>
+    <string name="pref_share_summary">Tell your friend about this app</string>
+    <string name="pref_rate_review_title">Rate &amp; Review</string>
+    <string name="pref_rate_review_summary">Rate and review this app if you think it is awesome</string>
+
+    <!-- Sharing content -->
+    <string name="share_to">Share to</string>
+    <string name="subject">Hi, I just Watch Awesome Video via Layar Tancep</string>
+    <string name="message">You can download Layar Tancep for Android at </string>
+
+    <integer name="ripple_duration">30</integer>
+
+    <string name="new_videos">New Videos</string>
+
+    <string name="drawer_item_menu_drawer_item">Menu Drawer Item</string>
+    <string name="drawer_item_menu_drawer_item_desc">Sample menu item with overflow button</string>
+
+    <string name="drawer_item_home">Home</string>
+    <string name="drawer_item_free_play">Free Play</string>
+    <string name="drawer_item_custom">Custom</string>
+    <string name="drawer_item_section_header">Section Header</string>
+    <string name="drawer_item_settings">Settings</string>
+    <string name="drawer_item_help">Help</string>
+    <string name="drawer_item_open_source">Open Source</string>
+    <string name="drawer_item_contact">Contact</string>
+
+</resources>
+

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:weightSum="1">
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.03">
+        <ImageView
+            android:id="@+id/img_songs"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5sp"
+            android:scaleType="centerCrop"
+            />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/img_songs"
+            android:layout_alignBottom="@+id/img_songs"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_alignTop="@+id/img_songs">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Label"
+                android:textSize="15sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignTop="@+id/logo"
+                android:layout_toRightOf="@+id/logo"
+                android:layout_toEndOf="@+id/logo">
+            </TextView>
+            <RelativeLayout
+                android:id="@+id/layout_info_play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp" >
+
+                <SeekBar
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/currentTime"
+                    android:layout_toLeftOf="@+id/duration"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:layout_centerVertical="true"
+
+                    android:id="@+id/currentTime"
+                    android:textColor="@color/grey"
+                 />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:id="@+id/duration"
+                    android:textColor="@color/grey"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/img_songs">
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:id="@+id/btnplay"
+                android:clickable="true"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_pause_black_18dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buffering..."
+                android:id="@+id/ld"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/grey"
+
+                android:layout_marginLeft="10dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/player_banner_ad_unit_id"
+        android:layout_weight="0.03" />
+
+
+</LinearLayout>

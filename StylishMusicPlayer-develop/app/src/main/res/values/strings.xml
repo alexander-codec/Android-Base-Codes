@@ -1,0 +1,86 @@
+<resources>
+    <string name="mp.app.name">Player de Música</string>
+
+    <string name="mp.list.layoutManager.linear">LinearLayoutManager</string>
+
+    <!-- Common -->
+
+    <string name="mp.cancel">Cancelar</string>
+    <string name="mp.Confirm">Confirmar</string>
+
+    <!-- Activity/Fragment Titles -->
+    <string name="mp.fragment.title.play_list">Lista de Reprodução</string>
+    <string name="mp.fragment.title.music">Music</string>
+    <string name="mp.fragment.title.local_files">Minhas músicas</string>
+    <string name="mp.fragment.title.settings">Configurações</string>
+
+    <string name="mp.activity.title.file_system">SDCard</string>
+
+    <!-- Play Lists -->
+    <string name="mp.play_list.favorite">Minhas Músicas Favoritas</string>
+    <string name="mp.play_list.footer.add">Criar nova lista</string>
+    <string name="mp.play_list.footer.end_summary_formatter">você tem %d lista de reprodução</string>
+
+    <string name="mp.play_list.create">Criar uma lista de reprodução</string>
+    <string name="mp.play_list.created">%s criadas</string>
+    <string name="mp.play_list.edit">Editar lista</string>
+    <string name="mp.play_list.dialog.hint">Nome da lista</string>
+    <string name="mp.play_list.dialog.add_to">Adicionar em</string>
+
+    <plurals name="mp_play_list_items_formatter">
+        <item quantity="one">%d música</item>
+        <item quantity="other">%d músicas</item>
+    </plurals>
+
+    <!-- Play Lists - Details -->
+    <string name="mp.play_list.details.empty">Nenhuma música aqui, adicione uma!</string>
+    <string name="mp.play_list.details.footer.end_summary_formatter">Você tem %d músicas</string>
+
+    <!-- Main -->
+    <string-array name="mp_main_titles">
+        <item>@string/mp.fragment.title.play_list</item>
+        <item>@string/mp.fragment.title.music</item>
+        <item>@string/mp.fragment.title.local_files</item>
+        <item>@string/mp.fragment.title.settings</item>
+    </string-array>
+
+    <!-- Music -->
+
+    <string name="mp.music.default_duration">00:00</string>
+
+    <!-- Local Files -->
+    <string name="mp.local_files.segmented.all">Todas</string>
+    <string name="mp.local_files.segmented.folder">Pastas</string>
+
+    <string name="mp.local_files.music_list.empty">Nenhuma música encontrada</string>
+    <string name="mp.local_files.music_list.end_summary_formatter">você tem %d músicas</string>
+    <string name="mp.local_files.folder_list.end_summary_formatter">você tem %d pastas</string>
+    <string name="mp.local_files.folder_list.item_info_formatter" formatted="false">%d música | %s</string>
+    <string name="mp.local_files.folder_list.add_folder">Adicionar pasta</string>
+
+    <string name="mp.local_files.file_system.empty">Nenhuma música encontrada</string>
+    <string name="mp.local_files.file_system.menu.done">Feito</string>
+
+    <!-- Local Files - File System -->
+    <plurals name="mp_folders_created_formatter">
+        <item quantity="one">%d nova pasta adicionada</item>
+        <item quantity="other">%d novas pastas adicionadas</item>
+    </plurals>
+    <plurals name="mp_directory_items_formatter">
+        <item quantity="one">%d arquivo</item>
+        <item quantity="other">%d arquivos</item>
+    </plurals>
+
+    <plurals name="mp_selected_folders_formatter">
+        <item quantity="one">%d pasta selecionada</item>
+        <item quantity="other">%d pastas selecionadas</item>
+    </plurals>
+
+    <!-- Menu -->
+    <string name="mp.menu.add_to_play_list">Adiconar á lista</string>
+    <string name="mp.menu.create_play_list">Criar uma lista</string>
+    <string name="mp.menu.refresh">Atualizar</string>
+    <string name="mp.menu.play_now">Reproduzir</string>
+    <string name="mp.menu.rename">Renomear</string>
+    <string name="mp.menu.delete">Deletar</string>
+</resources>

@@ -1,0 +1,91 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/MylistView">
+        <com.cjj.MaterialRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/refresh"
+            app:overlay="true"
+            app:wave_show="false"
+            app:isLoadMore="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            >
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lvVideo"
+        android:visibility="gone"
+      />
+
+        </com.cjj.MaterialRefreshLayout>
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="68dp"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/NothingToShow"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="68dp"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/search_hint"
+                android:id="@+id/textView"
+                android:textColor="@color/grey"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_above="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_headphones" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+             xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true">
+        </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+    </RelativeLayout>

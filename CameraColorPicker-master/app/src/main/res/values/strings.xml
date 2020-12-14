@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <string name="app_name">Câmera Picker</string>
+    <string name="contact_us_email" translatable="false">tvbarthel@gmail.com</string>
+    <string name="contact_us_uri" translatable="false">mailto:%1$s?subject=%2$s</string>
+    <string name="contact_us_default_subject"> Suggestion</string>
+
+    <!-- Main activity -->
+    <string name="activity_main_error_not_enough_colors">Você precisa de pelo menos 2 cores para criar uma paleta.</string>
+    <string name="activity_main_view_pager_title_color">Cor</string>
+    <string name="activity_main_view_pager_title_palette">Paleta</string>
+    <string name="activity_main_view_pager_title_unknown">Desconhecida</string>
+
+    <!-- Color picker activity -->
+    <string name="activity_color_picker_label">Escolha uma cor</string>
+    <string name="activity_color_picker_confirm_save_message">Cor guardada</string>
+
+    <!-- Color detail activity -->
+    <string name="activity_color_detail_label">Detalhe</string>
+    <string name="activity_color_detail_edit_text_dialog_fragment_title">Editar o nome da cor</string>
+    <string name="activity_color_detail_edit_text_dialog_fragment_positive_button">Editar</string>
+
+    <!-- License activity -->
+    <string name="activity_license_label">Content and Licenses</string>
+
+    <!-- Palette creation activity -->
+    <string name="activity_palette_creation_label">Nova paleta</string>
+    <string name="activity_palette_creation_instruction">Para adicionar cores à paleta\nbasta clicar na lista abaixo.</string>
+    <string name="activity_palette_creation_empty_color_palette_builder">Adicione pelo menos uma cor à paleta.</string>
+    <string name="activity_palette_creation_edit_text_dialog_fragment_title">Crie sua paleta</string>
+    <string name="activity_palette_creation_edit_text_dialog_fragment_hint">Minha nova paleta incrível</string>
+    <string name="activity_palette_creation_edit_text_dialog_fragment_positive_button">Criar</string>
+
+    <!-- Palette detail activity -->
+    <string name="activity_palette_detail_label">Detalhe</string>
+    <string name="activity_palette_detail_edit_palette_name_dialog_title">Editar o nome da paleta</string>
+    <string name="activity_palette_detail_edit_palette_name_dialog_hint">Sua fantástica paleta</string>
+    <string name="activity_palette_detail_edit_palette_name_dialog_positive_action">Editar</string>
+
+    <!-- About dialog fragment -->
+    <string name="fragment_dialog_about_version_name">Version %1$s</string>
+    <string name="fragment_dialog_about_message">Camera Color Picker is a free and open source Android app that lets you capture the colors around you using the camera of your device.</string>
+    <string name="fragment_dialog_about_made_by">Made in France with love by tbarthel &amp; vbarthel.</string>
+
+    <!-- Delete color dialog fragment -->
+    <string name="fragment_dialog_delete_color_title">Atenção</string>
+    <string name="fragment_dialog_delete_color_message">Quer mesmo deletar essa cor?</string>
+
+    <!-- Delete palette dialog fragment -->
+    <string name="fragment_dialog_delete_palette_title">Atenção</string>
+    <string name="fragment_dialog_delete_palette_message">Deletar á paleta %1$s?</string>
+
+    <!-- Main menu -->
+    <string name="menu_main_action_contact_us">Contact us</string>
+    <string name="menu_main_action_licenses">Content &amp; Licenses</string>
+    <string name="menu_main_action_about">About</string>
+
+    <!-- Color detail menu -->
+    <string name="menu_color_detail_action_share">Share</string>
+    <string name="menu_color_detail_action_edit">Editar</string>
+    <string name="menu_color_detail_action_delete">Deletar</string>
+
+    <!-- Palette detail menu -->
+    <string name="menu_palette_detail_action_share">Share</string>
+    <string name="menu_palette_detail_action_edit">Editar</string>
+    <string name="menu_palette_detail_action_delete">Deletar</string>
+
+    <!-- Color picker menu -->
+    <string name="menu_color_picker_action_flash">Flash</string>
+
+    <!-- Color clip -->
+    <string name="color_clip_success_copy_message">Copiado.</string>
+    <string name="color_clip_color_label_hex">Color item hexadecimal value.</string>
+    <string name="color_clip_color_label_rgb">Color item RGB value.</string>
+    <string name="color_clip_color_label_hsv">Color item HSV value.</string>
+
+    <!-- View color item list page -->
+    <string name="view_color_item_list_page_empty_view">Você não tem cores :(\n\nCapture uma cor com o botão no canto inferior direito.</string>
+
+    <!-- View palette list page -->
+    <string name="view_palette_list_page_empty_view">Você não tem paletas :(\n\nCrie uma paleta com o botão no canto inferior direito.</string>
+
+</resources>

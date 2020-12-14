@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wear Note</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">  </string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

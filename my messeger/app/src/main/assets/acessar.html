@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://atlanta.sensationthemes.com/messages.html -->
+<html class="w-mod-js w-mod-no-touch w-mod-video w-mod-no-ios wf-montserrat-n4-active wf-montserrat-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Messages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="framework.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="webfont.js"></script>
+  <link rel="stylesheet" href="style2.css"><script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="http://atlanta.sensationthemes.com/images/favico.ico">
+  <link rel="apple-touch-icon" href="http://atlanta.sensationthemes.com/images/favico.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="ionicons.min.css" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAjKfZn4ddFPk4bctF1lFQNPsuXPcNUv-8",
+    authDomain: "assistente-pessoal.firebaseapp.com",
+    databaseURL: "https://assistente-pessoal.firebaseio.com",
+    storageBucket: "assistente-pessoal.appspot.com",
+    messagingSenderId: "510696945104"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript">
+    /**
+     * Handles the sign in button press.
+     */
+    function toggleSignIn() {
+      if (firebase.auth().currentUser) {
+		alert('Deslogando...');
+        // [START signout]
+        firebase.auth().signOut();
+        // [END signout]
+      } else {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        if (email.length < 4) {
+          alert('Insira seu email.');
+          return;
+        }
+        if (password.length < 4) {
+          alert('Insira sua senha.');
+          return;
+        }
+		alert('Vereficando...');
+        // Sign in with email and pass.
+        // [START authwithemail]
+        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // [START_EXCLUDE]
+          if (errorCode === 'auth/wrong-password') {
+            alert('Senha incorreta.');
+          } else {
+            alert(errorMessage);
+          }
+          console.log(error);
+          document.getElementById('quickstart-sign-in').disabled = false;
+          // [END_EXCLUDE]
+        });
+        // [END authwithemail]
+      }
+      document.getElementById('quickstart-sign-in').disabled = true;
+    }
+    /**
+     * Handles the sign up button press.
+     */
+    function handleSignUp() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      if (email.length < 4) {
+        alert('Insira seu email.');
+        return;
+      }
+      if (password.length < 4) {
+        alert('Insira sua senha.');
+        return;
+      }
+      // Sign in with email and pass.
+      // [START createwithemail]
+      firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // [START_EXCLUDE]
+        if (errorCode == 'auth/weak-password') {
+          alert('Sua senha é muito pequena.');
+        }else {
+          alert('Esse email já está em uso.');
+        }
+        console.log(error);
+        // [END_EXCLUDE]
+      });
+      // [END createwithemail]
+    }
+    function sendPasswordReset() {
+      var email = document.getElementById('email').value;
+      // [START sendpasswordemail]
+      firebase.auth().sendPasswordResetEmail(email).then(function() {
+        // Password Reset Email Sent!
+        // [START_EXCLUDE]
+        alert('Nova senha enviada!');
+        // [END_EXCLUDE]
+      }).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // [START_EXCLUDE]
+        if (errorCode == 'auth/invalid-email') {
+          alert(errorMessage);
+        } else if (errorCode == 'auth/user-not-found') {
+          alert(errorMessage);
+        }
+        console.log(error);
+        // [END_EXCLUDE]
+      });
+      // [END sendpasswordemail];
+    }
+    /**
+     * initApp handles setting up UI event listeners and registering Firebase auth listeners:
+     *  - firebase.auth().onAuthStateChanged: This listener is called when the user is signed in or
+     *    out, and that is where we update the UI.
+     */
+    function initApp() {
+      // Listening for auth state changes.
+      // [START authstatelistener]
+      firebase.auth().onAuthStateChanged(function(user) {
+        // [START_EXCLUDE silent]
+        // [END_EXCLUDE]
+        if (user) {
+          // User is signed in.
+		  window.location.href = "index.html";
+          // [END_EXCLUDE]
+        } else {
+          // User is signed out.
+          // [START_EXCLUDE silent]
+		  console.log("Usuario Deslogado");
+          // [END_EXCLUDE]
+        }
+        // [START_EXCLUDE silent]
+        document.getElementById('quickstart-sign-in').disabled = false;
+        // [END_EXCLUDE]
+      });
+      // [END authstatelistener]
+      document.getElementById('quickstart-sign-in').addEventListener('click', toggleSignIn, false);
+      document.getElementById('quickstart-sign-up').addEventListener('click', handleSignUp, false);
+      document.getElementById('quickstart-password-reset').addEventListener('click', sendPasswordReset, false);
+    }
+    window.onload = function() {
+      initApp();
+    };
+  </script>
+</head>
+<body>
+  <section class="mobile-wrapper w-section">
+  <div class="bg-gradient page-content" data-scroll="0" id="main-stack">
+      <div class="body padding">
+        <div class="logo-login"></div>
+        <div class="bottom-section padding">
+          <div class="w-form">
+            <form action="acessar.html" method="get">
+              <div>
+                <input class="input-form light w-input" id="email" maxlength="256" placeholder="example@email.com" type="email">
+                <div class="separator-fields"></div>
+              </div>
+              <div>
+                <div class="block-input-combined">
+                  <input class="input-form left light w-input" id="password" maxlength="256" placeholder="Senha" type="password"><a class="right-input-link" id="quickstart-password-reset">Trocar senha?</a>
+                </div>
+                <div class="separator-button-input"></div>
+              </div>
+              <input class="action-button w-button" type="submit" value="Conectar ao cloud" id="quickstart-sign-in">
+              <div class="separator-button"></div><a class="link-upper" id="quickstart-sign-up">Você não tem uma conta? <strong class="b-link">Criar conta</strong></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loading-mask page-content stop-loading" id="new-stack">
+      <div class="loading-icon">
+        <div class="icon ion-load-d navbar-button-icon"></div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="framework.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
+
+</body></html>

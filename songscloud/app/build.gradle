@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+ android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "com.usmans.songscloud"
+        minSdkVersion 11
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        manifestPlaceholders = [onesignal_app_id: "xxxxxxxx-e269-4dfb-8b48-357b707acdae",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "108880509xxxx"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven {
+        url 'https://dl.bintray.com/ayz4sci/maven/'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.ayz4sci.androidfactory:downloadprogress:1.0.1'
+     compile 'com.google.android.gms:play-services-ads:+'
+
+
+    compile 'com.android.support:support-v4:25.0.0'
+    compile 'com.onesignal:OneSignal:3.+@aar'
+
+    // Required for OneSignal, even if you have added FCM.
+    compile 'com.google.android.gms:play-services-gcm:+'
+
+    // Required for geotagging
+    compile "com.google.android.gms:play-services-location:+"
+    compile 'com.google.android.gms:play-services-analytics:+'
+
+    // play-services-analytics is only needed when using 8.1.0 or older.
+    // compile 'com.google.android.gms:play-services-analytics:+'
+}
+

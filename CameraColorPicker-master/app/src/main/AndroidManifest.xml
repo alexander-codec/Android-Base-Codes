@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="fr.kinemarts.camera.picker"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Camera ! -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CCPTheme.Light" >
+
+        <activity
+            android:name="fr.kinemarts.camera.picker.activities.MainActivity"
+            android:theme="@style/CCPTheme.NoActionBar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="fr.kinemarts.camera.picker.activities.ColorPickerActivity"
+            android:label="@string/activity_color_picker_label"
+            android:parentActivityName="fr.kinemarts.camera.picker.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.kinemarts.camera.picker.activities.MainActivity" />
+
+            <intent-filter>
+                <action android:name="org.openintents.action.PICK_COLOR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="fr.kinemarts.camera.picker.activities.ColorDetailActivity"
+            android:label="@string/activity_color_detail_label"/>
+
+        <activity
+            android:name="fr.kinemarts.camera.picker.activities.PaletteDetailActivity"
+            android:label="@string/activity_palette_detail_label"
+            android:parentActivityName="fr.kinemarts.camera.picker.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.kinemarts.camera.picker.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="fr.kinemarts.camera.picker.activities.LicenseActivity"
+            android:label="@string/activity_license_label"
+            android:parentActivityName="fr.kinemarts.camera.picker.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.kinemarts.camera.picker.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="fr.kinemarts.camera.picker.activities.PaletteCreationActivity"
+            android:label="@string/activity_palette_creation_label"
+            android:parentActivityName="fr.kinemarts.camera.picker.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.kinemarts.camera.picker.activities.MainActivity" />
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="fr.kinemarts.camera.picker.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

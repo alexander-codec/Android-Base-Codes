@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listVideoItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/video_background"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/video_Image"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:contentDescription="@string/video" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/play"
+                android:src="@drawable/ic_play" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/video_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="@dimen/margintop"
+                android:maxLines="2"
+                android:text="2015-08-08-10-20-10_1_1_1.mp4"
+                android:textSize="@dimen/text_video" />
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="@dimen/margintop"
+                android:layout_toLeftOf="@+id/video_Name"
+                android:background="@drawable/more_click" />
+
+
+            <TextView
+
+                android:id="@+id/video_Length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:text="6minute"
+                android:textSize="@dimen/text_video" />
+
+            <TextView
+                android:id="@+id/video_Size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginRight="@dimen/text_margin"
+                android:text="100Mb"
+                android:textSize="@dimen/text_video" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

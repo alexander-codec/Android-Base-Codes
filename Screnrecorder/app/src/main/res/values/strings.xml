@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Record Screen Video Audio Foto</string>
+    <string name="device_not_supported_message">FFmpeg is not supported on your device</string>
+    <string name="device_not_supported">Device not supported</string>
+    <string name="notification">Screen Capture Started</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="countdown_one">1…</string>
+    <string name="countdown_two">2…</string>
+    <string name="countdown_three">3…</string>
+
+    <string name="trim">Trim </string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+
+    <string name="record">record  </string>
+    <string name="capture">capture</string>
+    <string name="review">review  </string>
+    <string name="setting">setting</string>
+
+
+    <string name="preference">Preferences</string>
+    <string name="video_resolution">Video Resolusion</string>
+    <string name="video_orientation">Video Orientation</string>
+    <string name="portrait">Portrait</string>
+    <string name="lanscape">Landscape</string>
+    <string name="setting_bitrate">Bit-rate:</string>
+    <string name="setting_Mbps">Mbps</string>
+    <string name="setting_audio">Screen Recoder Audio</string>
+    <string name="setting_touch">Show Screen Touch</string>
+    <string name="gpaddy_app">More Interesting Apps</string>
+
+
+    <string name="play">Play</string>
+
+    <string name="start_record">GPcapture is recording!</string>
+    <string name="stop_record">Click to stop</string>
+    <string name="record_stop">Record Stopped</string>
+    <string name="gp_stopped">GPcapture Stopped</string>
+
+    <string name="video">VIDEO</string>
+    <string name="image">IMAGE</string>
+    <string name="gallery">GALLERY</string>
+
+    <string name="screenshot_saved">Screenshot saved</string>
+
+    <string name="sharevideo">Share Video via</string>
+
+    <string name="audioset">Audio Set</string>
+    <string name="audiounset">Audio Unset</string>
+
+    <string name="touchset">Show Touch Set</string>
+    <string name="touchunset">Show Touch Unset</string>
+
+    <string name="admob_banner" translatable="false">ca-app-pub-9945008077594359/6611759020</string>
+    <string name="admob_full" translatable="false">ca-app-pub-9945008077594359/8088492223</string>
+</resources>

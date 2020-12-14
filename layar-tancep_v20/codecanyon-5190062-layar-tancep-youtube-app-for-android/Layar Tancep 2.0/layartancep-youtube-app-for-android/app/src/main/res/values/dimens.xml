@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="standard_margin">16dp</dimen>
+
+    <!-- Adapter item sizes -->
+    <dimen name="thumbnail_width">120dp</dimen>
+    <dimen name="thumbnail_height">96dp</dimen>
+    <dimen name="caption_padding">3dp</dimen>
+    <dimen name="item_twoline_height">120dp</dimen>
+    <dimen name="item_padding_with_icon">152dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+
+    <!-- Circular bar sizes -->
+    <dimen name="circleprogressbar_width">60dp</dimen>
+    <dimen name="circleprogressbar_height">60dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="title">20sp</dimen>
+    <dimen name="subhead">16sp</dimen>
+
+    <!-- Drawer sizes -->
+    <dimen name="header_drawer_height">72dp</dimen>
+</resources>

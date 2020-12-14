@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="org.secuso.privacyfriendlynetmonitor.Activities.MainActivity">
+
+    <include layout="@layout/toolbar"/>
+    <include layout="@layout/activity_main_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:id="@+id/main_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center|bottom"
+            android:text="@string/main_button_text_off"
+            android:textColor="@color/white"
+            android:background="@drawable/button_fullwidth" />
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="White">#ffffffff</color>
+    <color name="Ivory">#fffffff0</color>
+    <color name="LightYellow">#ffffffe0</color>
+    <color name="Yellow">#ffffff00</color>
+    <color name="Cornsilk">#fffff8dc</color>
+    <color name="Seashell">#fffff5ee</color>
+    <color name="DarkGray">#ffa9a9a9</color>
+    <color name="Gray">#ff808080</color>
+    <color name="DimGray">#ff696969</color>
+    <color name="DarkSlateGray">#ff2f4f4f</color>
+    <color name="LightSlateGray">#ff778899</color>
+    <color name="SlateGray">#ff708090</color>
+    <color name="LavenderBlush">#fffff0f5</color>
+    <color name="LightBlue">#ff00ccff</color>
+    <color name="Black">#ff000000</color>
+</resources>

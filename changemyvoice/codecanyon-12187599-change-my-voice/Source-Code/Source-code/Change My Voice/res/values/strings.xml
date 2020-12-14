@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Change My Voice</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="recording_stop" translatable="false">Recording Stop</string>
+    <string name="start_recording" translatable="false">Start Recording</string>
+    <string name="play_back" translatable="false">Play Back</string>
+    <string name="_ffffff" translatable="false">\#ffffff</string>
+    <string name="vamp" translatable="false">Ghost</string>
+    <string name="slow_motion" translatable="false">Slow Motion</string>
+    <string name="robot" translatable="false">Robot</string>
+    <string name="normal" translatable="false">Normal</string>
+    <string name="chipmunk" translatable="false">Chipmunk</string>
+    <string name="funny" translatable="false">Funny</string>
+    <string name="bee" translatable="false">Bee</string>
+    <string name="elephent" translatable="false">Elephent</string>
+    <string name="record_your_voice_first" translatable="false">Record your Voice First</string>
+    
+    <string name="banner_admob">ca-app-pub-123456789/123456789"</string>
+</resources>

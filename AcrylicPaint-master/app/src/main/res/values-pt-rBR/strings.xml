@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Desenhar</string>
+    <string name="app_description">Gostaria de desenhar algo mas não tem papel? Então, esta aplicação é para si. Basta escolher uma cor e desenhar. Após criar o desenho, pode guardar ou partilhar o ficheiro através de e-mail ou das redes sociais\n\nBoa Sorte :)</string>
+    <string name="here_is_your_canvas">Vamos Começar !</string>
+    <string name="color">Cor</string>
+    <string name="emboss">Sombra</string>
+    <string name="blur">Embaçado</string>
+    <string name="brush_size">Tamanho do Pincel</string>
+    <string name="erase">Apagador</string>
+    <string name="clear_all">Limpar Tela</string>
+    <string name="save">Salvar</string>
+    <string name="share">Compartilhar</string>
+    <string name="about">About</string>
+    <string name="open_image">Imagem de Fundo</string>
+    <string name="fill_background_with_color">Cor de Fundo</string>
+    <string name="your_selected_size_is">Tamanho Selecionado: %1$s</string>
+    <string name="choose_width">Escolha um Tamanho</string>
+    <string name="saved_your_location_to">Pintura salva em %1$s</string>
+    <string name="select">Select</string>
+    <string name="continue_fuck">Continuar</string> <!-- Workaround to avoid "R.string.continue", that it's as a special class-word! D: -->
+    <string name="ok">OK</string>
+    <string name="pick_color">Escolha uma Cor</string>
+    <string name="toolbox_share_title">Compartilhar via</string>
+    <string name="share_title_template">Minha Nova Pintura com Desenhar - https://play.google.com/store/apps/details?id=com.kinemarts.desenhar</string>
+    <string name="share_text_template">Share as text</string>
+    <string name="no_way_to_share">Can\'t locate an app to share with…</string>
+    <string name="normal">Pincel</string>
+    <string name="title_activity_about">About</string>
+    <string name="press_back_again">Clique novamente para sair</string>
+    <string name="select_image_to_open">Select image to open</string>
+    <string name="extract_color">Extrair uma cor</string>
+    <string name="color_extracted">Cor extraida</string>
+    <string name="tap_to_extract_color">Toque para extrair uma cor</string>
+    <string name="ability_disabled_need_newer_api_level">That ability is disabled because it requires a newer Android version (at least API level 17).</string>
+    <string name="smudge">Embaçador</string>
+
+</resources>

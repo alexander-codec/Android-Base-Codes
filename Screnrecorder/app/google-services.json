@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_id": "cleaner-master-gp",
+    "project_number": "617199904073",
+    "name": "Cleaner Master GP"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617199904073:android:57d5c98692b2076a",
+        "client_id": "android:com.gppady.cleaner",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.gppady.cleaner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-70854566-5"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

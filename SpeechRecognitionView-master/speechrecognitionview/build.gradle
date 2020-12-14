@@ -1,0 +1,17 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+group = 'com.github.jitpack'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+    }
+}
+
+dependencies {
+    compile rootProject.ext.supportAppCompat
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://atlanta.sensationthemes.com/messages.html -->
+<html class="w-mod-js w-mod-no-touch w-mod-video w-mod-no-ios wf-montserrat-n4-active wf-montserrat-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Messages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="framework.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="webfont.js"></script>
+  <link rel="stylesheet" href="style2.css"><script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="http://atlanta.sensationthemes.com/images/favico.ico">
+  <link rel="apple-touch-icon" href="http://atlanta.sensationthemes.com/images/favico.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="ionicons.min.css" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAjKfZn4ddFPk4bctF1lFQNPsuXPcNUv-8",
+    authDomain: "assistente-pessoal.firebaseapp.com",
+    databaseURL: "https://assistente-pessoal.firebaseio.com",
+    storageBucket: "assistente-pessoal.appspot.com",
+    messagingSenderId: "510696945104"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript">
+    /**
+     * Handles the sign in button press.
+     */
+    function toggleSignIn() {
+      if (firebase.auth().currentUser) {
+        // [START signout]
+        firebase.auth().signOut();
+        // [END signout]
+      } else {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        if (email.length < 4) {
+          alert('Insira seu email.');
+          return;
+        }
+        if (password.length < 4) {
+          alert('Insira sua senha.');
+          return;
+        }
+        // Sign in with email and pass.
+        // [START authwithemail]
+        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // [START_EXCLUDE]
+          if (errorCode === 'auth/wrong-password') {
+            alert('Senha incorreta.');
+          } else {
+            alert(errorMessage);
+          }
+          console.log(error);
+          document.getElementById('quickstart-sign-in').disabled = false;
+          // [END_EXCLUDE]
+        });
+        // [END authwithemail]
+      }
+      document.getElementById('quickstart-sign-in').disabled = true;
+    }
+    function initApp() {
+      // Listening for auth state changes.
+      // [START authstatelistener]
+      firebase.auth().onAuthStateChanged(function(user) {
+        // [START_EXCLUDE silent]
+        // [END_EXCLUDE]
+        if (user) {
+			// User is signed in.
+			console.log(JSON.stringify(user, null, '  '));
+			var user = firebase.auth().currentUser;
+			if (user != null) {
+				//$("#nomecompleto").text(user.displayName);
+				//$("#nomecompletosmartphone").text(user.displayName);
+			}
+          // [END_EXCLUDE]
+        } else {
+          // User is signed out.
+          // [START_EXCLUDE silent]
+		  window.location.href = "acessar.html";
+          // [END_EXCLUDE]
+        }
+      });
+      // [END authstatelistener]
+      document.getElementById('quickstart-sign-in').addEventListener('click', toggleSignIn, false);
+    }
+    window.onload = function() {
+      initApp();
+    };
+  </script>
+</head>
+<body>
+  <section class="mobile-wrapper w-section">
+    <div class="page-content" id="main-stack">
+      <div class="navbar w-nav" data-animation="over-right" data-collapse="all" data-contain="1" data-duration="400" data-easing="ease-out-quint" data-no-scroll="1">
+        <div class="w-container">
+          <div class="navbar-title">Messages</div>
+          <a class="navbar-button right w-inline-block" href="index.html">
+            <div class="icon ion-ios-plus-empty navbar-button-icon"></div>
+          </a>
+        </div>
+      <div class="w-nav-overlay" data-wf-ignore=""></div></div>
+      <div class="body">
+        <ul class="list list-messages">
+          <li class="list-message" data-ix="list-item" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1), transform 500ms cubic-bezier(0.23, 1, 0.32, 1);">
+            <a class="w-clearfix w-inline-block" data-load="1" href="chat.html">
+              <div class="column-left w-clearfix">
+                <div class="image-message"><img src="img/profile/129.jpg">
+                </div>
+              </div>
+              <div class="column-right">
+                <div class="message-title">James White</div>
+                <div class="message-text">&nbsp;I've seen the best template on the market. Really great design, clean and modern, grea</div>
+              </div>
+            </a>
+          </li>
+          <li class="list-message" data-ix="list-item" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1), transform 500ms cubic-bezier(0.23, 1, 0.32, 1);">
+            <a class="w-clearfix w-inline-block" data-load="1" href="chat.html">
+              <div class="column-left w-clearfix">
+                <div class="image-message"><img src="img/profile/128.jpg">
+                </div>
+              </div>
+              <div class="column-right">
+                <div class="message-title">Claudio Glugieri</div>
+                <div class="message-text">&nbsp;We have created a clean code and an easy-to-use template so buyers are happy!</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="loading-mask page-content stop-loading" id="new-stack">
+      <div class="loading-icon">
+        <div class="icon ion-load-d navbar-button-icon"></div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="framework.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
+
+</body></html>

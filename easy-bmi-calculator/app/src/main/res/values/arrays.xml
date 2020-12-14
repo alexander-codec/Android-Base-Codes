@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ranges">
+        <item>18.5</item>
+        <item>26</item>
+        <item>31</item>
+        <item>50</item>
+    </string-array>
+
+    <string-array name="rangeColors">
+        <item>#0099E8</item>
+        <item>#00AE4A</item>
+        <item>#FFC600</item>
+        <item>#E0192B</item>
+    </string-array>
+
+    <string-array name="weightArray">
+        <item>Kg</item>
+        <item>Lb</item>
+    </string-array>
+
+    <string-array name="heightArray">
+        <item>Cm</item>
+        <item>Ft+In</item>
+    </string-array>
+
+    <string-array name="heightInnerArray">
+        <item>Ft+In</item>
+        <item>Cm</item>
+    </string-array>
+
+</resources>

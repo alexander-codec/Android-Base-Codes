@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6e3288</color>
+    <color name="colorPrimaryDark">#562474</color>
+    <color name="colorAccent">#a1887f</color>
+
+
+    <color name="color_custom_fragment_one">#c08083</color>
+    <color name="color_dark_custom_fragment_one">#6e3288</color>
+    <color name="light_pink">#fff2f4</color>
+    <color name="pink">#ffc0cb</color>
+    <color name="fade_pink">#EBA5B4</color>
+    <color name="indigo">#4b0082</color>
+
+    <color name="btn_blue">#00bcd4</color>
+    <color name="btn_hover_blue">#FF0097A7</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_54">#f1f1f1</color>
+    <color name="white_87">#e0e0e0</color>
+    <color name="white_92">#bcbcbc</color>
+    <color name="white_98">#9e9e9e</color>
+</resources>

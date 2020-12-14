@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_detail_main_content"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <include layout="@layout/toolbar" />
+    <!-- the layout which will contain (host) the drawerLayout -->
+    <FrameLayout
+        android:id="@+id/drawer_container"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent">
+
+        <!-- the layout which will be the content of the activity (which will be hosted inside the drawer (NOT the list of the drawer)) -->
+        <RelativeLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                class="com.pongodev.layartancepapp.fragments.FragmentVideo"
+                android:id="@+id/video_fragment_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <!-- the layout which will be the content of the activity (which will be hosted inside the drawer (NOT the list of the drawer)) -->
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_below="@+id/video_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/item_twoline_height"
+    android:background="@color/material_background_color">
+
+    <FrameLayout
+        android:id="@+id/lytThumbnail"
+        android:layout_width="@dimen/thumbnail_width"
+        android:layout_height="@dimen/thumbnail_height"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_gravity="center_vertical">
+        <ImageView
+            android:id="@+id/imgThumbnail"
+            android:layout_width="@dimen/thumbnail_width"
+            android:layout_height="@dimen/thumbnail_height"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/txtDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_and_icon_color"
+            android:textSize="@dimen/subhead"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:padding="@dimen/caption_padding"
+            android:background="@color/accent_color"
+            android:layout_gravity="bottom|right"/>
+    </FrameLayout>
+
+    <!-- Location name and address -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_padding_with_icon"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="@dimen/standard_margin">
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/title"
+            android:ellipsize="end"
+            android:maxLines="2"/>
+
+        <TextView
+            android:id="@+id/txtPublishedAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/subhead"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider_color"
+        android:layout_gravity="bottom" />
+</FrameLayout>

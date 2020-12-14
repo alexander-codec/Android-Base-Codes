@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/final_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_selector"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.itobuz.android.easybmicalculator.FinalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        android:weightSum="1"
+        android:layout_marginTop="40dp">
+
+
+        <ImageView
+            android:id="@+id/logo5img"
+            android:layout_width="@dimen/img_dimen_sm"
+            android:layout_height="@dimen/img_dimen_sm"
+            android:src="@drawable/ic_bmi_icon"
+            android:elevation="1dp"
+            android:layout_marginTop="10dp"
+            tools:targetApi="lollipop"
+            android:contentDescription=""
+            tools:ignore="ContentDescription"
+            android:layout_marginBottom="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/final_bmi_text"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:id="@+id/final_bmi_text"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white_54" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/final_bmi_text2"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:id="@+id/final_bmi_text2"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white_54"
+            android:layout_marginBottom="50dp" />
+
+
+        <TextView
+            android:id="@+id/result_bmi"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:gravity="center"
+            android:paddingTop="60dp"
+            android:paddingBottom="60dp"
+            android:fontFamily="sans-serif"
+            android:textSize="36sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

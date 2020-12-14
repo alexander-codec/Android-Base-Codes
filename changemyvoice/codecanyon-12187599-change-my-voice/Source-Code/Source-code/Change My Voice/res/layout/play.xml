@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ab" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/back" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_marginBottom="16.0dip" android:text="Playing.." android:layout_weight="1.0" />
+        <ImageView android:id="@+id/imgLogo1" android:layout_width="fill_parent" android:layout_height="70.0dip" android:src="@drawable/play" android:layout_weight="0.79" android:layout_centerInParent="true" />
+        <Button android:textColor="@color/Black" android:id="@+id/btncancel2" android:background="@color/Cornsilk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="STOP" android:layout_weight="1.0" android:layout_alignRight="@+id/editText1" />
+    </LinearLayout>
+</RelativeLayout>

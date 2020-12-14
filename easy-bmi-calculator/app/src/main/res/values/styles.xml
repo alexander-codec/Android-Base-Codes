@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent ="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Floating label text style-->
+    <style name="MyHintText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/white_54</item>
+        <item name="android:colorControlNormal">@color/white_54</item>
+        <item name="android:textColorHint">@color/white_54</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--Input field style-->
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white_87</item>
+        <item name="android:colorControlNormal">@color/white_54</item>
+        <item name="android:textColorHint">@color/white_54</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--Floating label text style-->
+    <style name="InnerHintText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/indigo</item>
+        <item name="android:colorControlNormal">@color/indigo</item>
+        <item name="android:textColorHint">@color/indigo</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--Input field style-->
+    <style name="InnerEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/indigo</item>
+        <item name="colorControlActivated">@color/indigo</item>
+        <item name="android:colorControlNormal">@color/indigo</item>
+        <item name="android:textColorHint">@color/indigo</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">0dp</item>
+        <item name="tabPaddingEnd">0dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/white_54</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/btn_blue</item>
+        <item name="colorButtonNormal">@color/btn_hover_blue</item>
+    </style>
+
+</resources>

@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.kinemarts.supermercadofriedrich"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 8
+        versionName "2.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file("C:\\Users\\alexa\\.AndroidStudio2.2\\keystore.jks")
+            storePassword "cHuJu@3re"
+            keyAlias "miibijanbgkqhkig9w0baqefaaocaq8amiibcgkcaqeajc1zyhm9dlh+vaxss4hysam7oze2wdyl6tttosochklrh0vhiopb+y/nxoncapmmwpljdvfat9sbipxpplqd0kufxs8wscbztby6l5ep2pub5aovjpnylamnhx3zszqxxumbi437rtgm6+wevk91b2cehv9ol78rdrt8f29ws5rkci6o2vjcpmb7lj7q9sundniznee7dcplfbmnyfub7qdebeiatflj2fjvmpnu9/y3ubcmwnsns0pyzzrc/4fliq8mqgr82gsqmhjoojtfaskmxwmvagtevgbmrfvqrrgkjqyp+np4/n9hexunqreptvcuyh0x+39ndfheft8umwidaqab"
+            keyPassword "cHuJu@3re"
+            v2SigningEnabled false
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:design:25.1.1'
+    testCompile 'junit:junit:4.12'
+}

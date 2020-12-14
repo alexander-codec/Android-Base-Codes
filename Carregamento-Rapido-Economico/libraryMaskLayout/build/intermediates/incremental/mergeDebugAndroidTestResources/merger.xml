@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="debug$Generated" generated="true"><source path="C:\desenvolvimento\Carregamento-Rapido-Economico\libraryMaskLayout\build\intermediates\bundles\debug\res"/></dataSet><dataSet config="main$Generated" generated="true"><source path="C:\desenvolvimento\Carregamento-Rapido-Economico\libraryMaskLayout\src\androidTest\res"/><source path="C:\desenvolvimento\Carregamento-Rapido-Economico\libraryMaskLayout\build\generated\res\rs\androidTest\debug"/><source path="C:\desenvolvimento\Carregamento-Rapido-Economico\libraryMaskLayout\build\generated\res\resValues\androidTest\debug"/></dataSet><dataSet config="debug" from-dependency="true" generated-set="debug$Generated"><source path="C:\desenvolvimento\Carregamento-Rapido-Economico\libraryMaskLayout\build\intermediates\bundles\debug\res"><file path="C:\desenvolvimento\Carregamento-Rapido-Economico\libraryMaskLayout\build\intermediates\bundles\debug\res\values\values.xml" qualifiers=""><declare-styleable name="MaskableLayout"><attr format="reference" name="mask"/><attr name="porterduffxfermode">
+            <enum name="ADD" value="0"/>
+            <enum name="CLEAR" value="1"/>
+            <enum name="DARKEN " value="2"/>
+            <enum name="DST" value="3"/>
+            <enum name="DST_ATOP" value="4"/>
+            <enum name="DST_IN" value="5"/>
+            <enum name="DST_OUT" value="6"/>
+            <enum name="DST_OVER" value="7"/>
+            <enum name="LIGHTEN" value="8"/>
+            <enum name="MULTIPLY" value="9"/>
+            <enum name="OVERLAY" value="10"/>
+            <enum name="SCREEN" value="11"/>
+            <enum name="SRC" value="12"/>
+            <enum name="SRC_ATOP" value="13"/>
+            <enum name="SRC_IN" value="14"/>
+            <enum name="SRC_OUT" value="15"/>
+            <enum name="SRC_OVER" value="16"/>
+            <enum name="XOR" value="17"/>
+        </attr></declare-styleable></file></source></dataSet><dataSet config="main" generated-set="main$Generated"><source path="C:\desenvolvimento\Carregamento-Rapido-Economico\libraryMaskLayout\src\androidTest\res"/><source path="C:\desenvolvimento\Carregamento-Rapido-Economico\libraryMaskLayout\build\generated\res\rs\androidTest\debug"/><source path="C:\desenvolvimento\Carregamento-Rapido-Economico\libraryMaskLayout\build\generated\res\resValues\androidTest\debug"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="MaskableLayout"><attr format="reference" name="mask"/><attr name="porterduffxfermode">
+            <enum name="ADD" value="0"/>
+            <enum name="CLEAR" value="1"/>
+            <enum name="DARKEN " value="2"/>
+            <enum name="DST" value="3"/>
+            <enum name="DST_ATOP" value="4"/>
+            <enum name="DST_IN" value="5"/>
+            <enum name="DST_OUT" value="6"/>
+            <enum name="DST_OVER" value="7"/>
+            <enum name="LIGHTEN" value="8"/>
+            <enum name="MULTIPLY" value="9"/>
+            <enum name="OVERLAY" value="10"/>
+            <enum name="SCREEN" value="11"/>
+            <enum name="SRC" value="12"/>
+            <enum name="SRC_ATOP" value="13"/>
+            <enum name="SRC_IN" value="14"/>
+            <enum name="SRC_OUT" value="15"/>
+            <enum name="SRC_OVER" value="16"/>
+            <enum name="XOR" value="17"/>
+        </attr></declare-styleable></configuration></mergedItems></merger>

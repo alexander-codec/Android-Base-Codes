@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/four_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/back_selector"
+    android:orientation="vertical"
+    tools:context="com.itobuz.android.easybmicalculator.FourFragment">
+
+
+    <ImageView
+        android:id="@+id/logo4img"
+        android:layout_width="@dimen/img_dimen_sm"
+        android:layout_height="@dimen/img_dimen_sm"
+        android:src="@drawable/ic_bmi_icon"
+        android:contentDescription="@string/image_desc"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center" />
+
+
+    <LinearLayout
+        android:id="@+id/height_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/heighttLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:hintTextAppearance="@style/MyHintText"
+            android:gravity="start"
+            android:layout_marginStart="20dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/height"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/enter_height"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="normal"
+                android:drawableEnd="@drawable/ic_edit"
+                android:fontFamily="monospace"
+                android:gravity="center"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/height_unit"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textColor="@color/light_pink"
+            android:entries="@array/heightArray"
+            android:theme="@style/AppTheme"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/height_inch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/heightInchLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:hintTextAppearance="@style/MyHintText"
+            android:gravity="start"
+            android:layout_marginStart="20dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/height_inch"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/enter_inch"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="normal"
+                android:drawableEnd="@drawable/ic_edit"
+                android:fontFamily="monospace"
+                android:gravity="center"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
